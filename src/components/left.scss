@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.leftBar{
+    top: 55px;
+    z-index: 20;
+    display: flex;
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 10%;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    div{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        margin-top: .3rem;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        align-self: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        svg{
+            margin: 8px;
+        }
+        h5{
+            justify-content: center;
+            align-items: center;
+            font-weight: 100;
+        }
+    }
+    @media screen and (max-width: 670px) {
+        margin-left: 0px;
+    }
+    @media screen and (max-width: 430px) {
+        display:none;
+    }
+}

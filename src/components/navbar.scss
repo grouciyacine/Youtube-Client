@@ -1,0 +1,112 @@
+@import '../variables';
+.navbar{
+    display: flex;
+    padding-left: .5rem;
+    flex-direction: row;
+    overflow: hidden;
+    position: sticky;
+    z-index: 20;
+    background-color: $primary-color;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    svg{
+        color: white;
+        cursor: pointer;
+        
+    }
+    .logo{
+        position: relative;
+        padding-left: 20px;
+        margin-left: 20px;
+        padding: .4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        svg{
+            margin-right: 40px;
+        }
+        h3{
+            font-weight: 500;
+            margin-left: 18px;
+            color: white;
+            font-size: $font-family;
+        }
+            img{
+        width: $logo-width;
+        height: $logo-height;
+    }
+    }
+.input{
+    position: relative;
+    margin-left: 6rem;
+    border: 1px solid $secondary-color;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    input{
+        color: white;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: larger;
+    }
+svg{
+    left: 0;
+    padding-right: 10px;
+}
+}
+.micro{
+    margin-right: 5rem;
+
+
+}
+.left{
+    padding-right: 1rem;
+    margin: .2rem;
+    overflow: hidden;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    svg{
+        padding: 1rem;
+    }
+
+}
+    @media screen and (max-width: 670px) {
+        .left{
+                display: none;
+        }
+        .logo{
+            margin-left: 0px;
+            position: relative;
+            padding-left: 0px;
+            img{
+                position: absolute;
+                left:  30px;
+                margin-right: 0px;
+            }
+            h3{
+                margin-right: -2px;
+            }
+        }
+        .micro{
+            margin-right: 1px;
+        }
+        .input{
+            position: relative;
+            left: 12px;
+            margin-left: 0px;
+
+        }
+        
+    }
+}
+

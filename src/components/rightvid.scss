@@ -1,0 +1,26 @@
+.right-vid{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    .rn{
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+        button{
+            margin-left: 12px;
+            height: 5vh;
+            border-radius: 5px;
+            background-color: white;
+            border: none;
+            width: fit-content;
+            font-size: medium;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background-color: #5A5A5A;
+            }
+        }
+    }
+}

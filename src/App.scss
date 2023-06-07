@@ -1,0 +1,12 @@
+@import 'variables';
+.App {
+  text-align: center;
+
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+  }
+}

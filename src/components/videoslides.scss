@@ -1,0 +1,17 @@
+.slides{
+    display: grid;
+    grid-gap: 25px;
+    gap: 25px;
+    grid-template-columns: repeat(3,1fr);
+    flex: 1;
+    margin-left: 30px;
+
+    @media screen and (max-width:880px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (max-width:767px) {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+}

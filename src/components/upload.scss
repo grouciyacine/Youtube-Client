@@ -1,0 +1,64 @@
+@import '../variables.scss';
+form{
+        padding: .4rem;
+        margin: .5rem;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        place-items: center;
+        div{
+                background-color: #000000a7;
+                padding: .5rem;
+                border-radius: 10px;
+                div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        input{
+                                flex: 1;
+                                border-radius: 5px;
+                                outline: none;
+                                border: none;
+                                height: 4vh;
+                                padding: .2rem;
+                                margin-left: 12px;
+                        }
+                }
+        }
+        .button{
+        width: 100px;
+        height: 6vh;
+        margin-top: 22px;
+        background-color: $red;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        font-size: medium;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover{
+            background-color: white;
+            color:$red;
+        }
+    }
+}
+.select{
+background-color: $red;
+height: 24px;
+padding:4px ;
+margin-left:12px;
+width: fit-content;
+cursor: pointer;
+transition: all .3s ease-in-out;
+&:hover{
+        color: $red;
+        background-color: white;
+}
+
+}

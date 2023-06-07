@@ -1,0 +1,29 @@
+.comment{
+    display: flex;
+    padding-top: 1rem;
+    margin: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: 60px;
+    align-items: flex-start;
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 360px;
+            padding: .1rem;
+        }
+        h6{
+            padding-left: .5rem;
+        }
+    }
+    h5{
+        transform: translateY(-38px);
+        margin-left: 45px;
+    }
+}

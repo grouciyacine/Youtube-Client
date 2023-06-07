@@ -1,0 +1,81 @@
+@import '../variables.scss';
+.one-vid{
+    img{
+        cursor: pointer;
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+        @media screen and (max-width:1114px) {
+            width: 95%;
+        }
+            @media screen and (max-width:430px) {
+        width: 110%;
+        transform: translateX(-27px);
+        border-radius: 0px;
+        
+    }
+    }
+    .vid-info{
+        display: flex;
+        flex-direction: column;
+        .e1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 2px;
+            @media screen and (max-width:430px) {
+                h4{
+                    transform: translateX(-30px);
+                }
+            }
+        img{
+            width: 35px;
+            height: 35px;
+            border-radius: 360px;
+            
+        }
+        h4{
+            margin: 0rem;
+            color: white;
+            padding-left: 1rem;
+            font-family: $font-family;
+        }            
+        }
+        .e2{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 4rem;
+            font-family: $font-family;
+            top: -10px;
+            color: lightgrey;
+            @media screen and (min-width:530px) {
+                
+                    transform: translateY(-20px);
+                
+                    
+                }
+            @media screen and (max-width:430px) {
+                display:flex;
+                margin-left: 2rem;
+                flex-direction:row;
+                transform: translateY(-10px);
+                .va{
+                    margin-left: 10px;
+                }
+            }
+            @media screen and (min-width:530px) {
+            .va{
+                transform: translateY(-40px);
+            }
+                
+            }
+
+        }
+    }
+
+}
